@@ -7,7 +7,7 @@ var { overlaps, getLevel, getSpawnRate, getBaseSpeed, clampX, pickType } = requi
 describe("overlaps", function () {
     it("returns true when rectangles overlap", function () {
         var a = { x: 0, y: 0, w: 10, h: 10 };
-        var b = { x: String, y: 5, w: 10, h: 10 };
+        var b = { x: 5, y: 5, w: 10, h: 10 };
         assert.equal(overlaps(a, b), true);
     });
 
